@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <title>ECharts</title>
     <!-- 引入 echarts.js -->
@@ -34,16 +33,19 @@
             series: [
                 {
                     name: '二氧化硫年排放量（万吨）',
-                    type: 'bar',
+                    type: 'line',
+                    smooth: true,
                     data: [812,823,828,956,1101,1251,1321,1257,1171,1031,894, 926, 876, 772, 618, 198, 151, 115, 93, 86]
                 }, {
                     name: '氮氧化物年排放量（万吨）',
-                    type: 'bar',
+                    type: 'line',
+                    smooth: true,
                     data: [474,495,538,608,678,705,737,806,817,839,966, 1042, 970, 822, 615, 175, 144, 116, 100, 96]
                 },
                 {
                     name: '烟尘年排放量（万吨）',
-                    type: 'bar',
+                    type: 'line',
+                    smooth: true,
                     data: [330,330,335,340,351,367,383,367,351,335,207, 162, 162, 142, 95, 35, 32, 23, 16, 12]
                 }]
         };
